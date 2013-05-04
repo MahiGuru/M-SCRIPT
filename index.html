@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Mahipal Operating system Document</title>
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/Mstyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="script/content.js"></script>
+    <script type="text/javascript" src="script/mDragable.js"></script>
+    <script type="text/javascript" src="script/treeList.js"></script>
+    <script type="text/javascript" src="script/meditor.js"></script>
+    <script type="text/javascript" src="script/rotate.js"></script>
+    <script type="text/javascript" src="script/calendar.js"></script>
+    <script type="text/javascript" src="script/contextMenu.js"></script>
+    <script type="text/javascript" src="script/json2.js"></script>
+    <script type="text/javascript" src="script/masters.js"></script>
+</head>
+<body>
+    <div id="Mcontainer">
+    	<div class="loginArea">
+        	<div class="loginBox userBox">
+        	    <img src="images/users.png" width="128" alt="loginImg" />
+                <input type="password" class="epassword" /><input type="button" value="" class="loginBtn" />
+            </div>
+            <div class="loginBox changeUserBox">
+            	<img src="images/users.png" width="128" />
+            	<input type="password" class="eusername" />
+                <input type="password" class="epassword" /><input type="button" value="" class="loginBtn" />
+            </div>
+            <div class="changeUser"><a href="#" class="userTxt changeUserTxt">Change User</a></div>div>
+        </div><!-- login aarea div end here -->
+    
+        <ul class="thumbnailUL">
+            <li class="thumbnail_Li"><span class="myWorksFolderIcon"></span><span class="thumbTitle">
+                My Javascript Works</span> </li>
+            <li class="thumbnail_Li"><span class="myDesignFolderIcon"></span><span class="thumbTitle">
+                My Design Works</span> </li>
+            <li class="thumbnail_Li"><span class="myEditorIcon"></span><span class="thumbTitle">
+                MEditor</span> </li>
+            <li class="thumbnail_Li"><span class="aboutIcon"></span><span class="thumbTitle">About
+                                                                        Me</span></li>
+            <li class="thumbnail_Li"><span class="DFileIcon textFileIcon"></span><span class="thumbTitle">Comments</span></li>
+                                                                        
+                            
+        </ul>
+        <!-- thumbnailUL Div end here -->
+        <div class="rightDiv">
+            <div class="visitsDiv">
+                <span class="boxClose"></span><span class="visitsCount">125</span> <span class="visitsDayCount">
+                    25</span>
+            </div>
+            <!-- visitsDiv end here -->
+            <div class="clockSpace">
+                <span class="boxClose"></span><span class="minutesStick"></span><span class="hoursStick">
+                </span><span class="secondsStick"></span><span class="centerDotClock"></span>
+            </div>
+            <!-- ClockSpace Div end here -->
+        </div>
+        <!-- RightDiv end here -->
+        <div class='textFileComments' style="display: none" title="FolderDivs">
+            <div class="historyBackArea">
+                <span class="comments_save_btn">Save</span>
+            </div>
+            <div class="widgetContent thumbanilsListView">
+                <div class="commentsTxt"> Good Job Mahipal -- Maks</div>
+                
+            </div>
+        </div>
+
+        <div class="AboutmeFolderDiv" title="FolderDivs" style="display: none;">
+            <div class="historyBackArea">
+                <span class="backBtnDisabled"></span><span class="forwordBtnDisabled"></span>
+            </div>
+            <div class="widgetContent thumbanilsListView"> </div>
+        </div>
+        
+        <div class="jWorksFolderDiv" title="FolderDivs"  style="display: none;">
+            <div class="historyBackArea">
+                <span class="backBtnDisabled"></span><span class="forwordBtnDisabled"></span>
+            </div>
+            <!-- historyBackArea div end here -->
+            <div class="widgetContent thumbanilsListView"></div>
+            <!-- widgetConent Div end here -->
+        </div>
+        <!--jWorksFolderDiv widgetDiv End here -->
+        <div class="dWorksFolderDiv" title="FolderDivs" style="display: none;">
+            <div class="historyBackArea">
+                <span class="backBtnDisabled"></span><span class="forwordBtnDisabled"></span>
+            </div>
+            <!-- historyBackArea div end here -->
+            <div class="widgetContent thumbanilsListView"> </div>
+            <!-- widgetConent Div end here -->
+        </div>
+        <!-- dWorksFolderDiv widgetDiv End here -->
+        <!-- Editor area div Start here --->
+        <div class="mEditor" id="mEditor" style="display: none">
+            <div class="outputButtons">
+                <a href="#" class="runCode">Run</a></div>
+            <div class="editingArea">
+                <div class="leftContainer">
+                    <textarea class="HTMLarea" cols="15" rows="10"></textarea>
+                    <span class="htmlSpan">HTML</span>
+                    <textarea class="cssArea" cols="15" rows="10"></textarea>
+                    <span class="cssSpan">CSS</span>
+                </div>
+                <!-- leftContainer div end here -->
+                <div class="rightContainer">
+                    <span class="javascriptSpan">Javascript</span>
+                    <textarea class="javascriptArea" cols="15" rows="10"></textarea>
+                </div>
+                <!-- rightContainer div end here -->
+                <div class="contentArea">
+                    <span class="outputSpan">Output</span>
+                    <iframe id="outputFrame" width="100%" height="400" src="output.html"></iframe>
+                </div>
+                <!-- centerContainer div end here -->
+            </div>
+            <!-- editingArea div end here -->
+        </div>
+        <!-- mEditor end here -->
+        <!-- mCalender --->
+        <div class="myCalendar" style="display: none">
+        </div>
+        <!-- folder Context menu start here -->
+        <div id="contextmenu" style="display:none;"> 
+                <ul> 
+                     <li class="cut seprator"><a href="#" id="viewBtn">View</a>
+                     	<ul class="sublist" style="display:none;">
+                        	<li>Large Icons</li>
+                            <li>Medium Icons</li>
+                            <li>Small Icons</li>
+                        </ul>
+                     </li> 
+                     <li class="copy"><a href="#" id="copyBtn">Copy</a></li> 
+                     <li class="paste seprator"><a href="#" id="pasteBtn">Paste</a></li> 
+                     <li class="edit"><a href="#" id="refreshBtn">Refresh</a></li> 
+                     <li class="rename"><a href="#" id="renameBtn">Rename</a></li> 
+                     <li class="new"><a href="#" id="newBtn">New</a>
+                         <ul class="sublist" style="display:none;">
+                                <li class="newfBtn">New Folder</li>
+                         </ul>
+                     </li> 
+                     <li class="deleteBtn" style="display: none;"><a href="#" id="A1">Delete</a></li> 
+                </ul> 
+         </div> 
+        
+        
+        
+         <!-- folder Context menu start here -->
+        <div id="desktopContextMenu" style="display:none;"> 
+                <ul> 
+                     <li class="cut seprator"><a href="#" id="A2">View</a>
+                     	<ul class="sublist" style="display:none;">
+                        	<li>Large Icons</li>
+                            <li>Medium Icons</li>
+                            <li>Small Icons</li>
+                        </ul>
+                     </li> 
+                     <li class="edit"><a href="#" id="A5">Refresh</a></li> 
+                    <li class="rename"><a href="#" id="A6"><input type="file" value="Change Background" class='changeBackgroundBtn' /></a></li> 
+                     
+                </ul> 
+         </div> 
+        
+        
+
+        <div class="allProgramesArea">
+            <a class="shutdown_txt">Shutdown <span class="rightArrow"></span></a>
+            <ul class="shutdownList"><li><a class="shutDownWindow">Shutdown</a></li><li><a class="restartWindow">Restart</a></li></ul>
+            <div class="leftSpace">
+                <ul class="ulist">
+                    <li class="visitorWidget"><span class="visitorIcon"></span><span class="startMenuTxt">
+                        Visitors</span></li>
+                    <li class="clockWidget"><span class="clockIcon"></span><span class="startMenuTxt">Clock</span></li>
+                    <li class="startMenuEditorIcon"><span class="myEditorIcon"></span>
+                        <spn class="startMenuTxt">
+                        MEditor</span></li>
+                    <li class="startMenuBrowserIcon"><span class="browserIcon"></span><span class="startMenuTxt">
+                        Mozilla Browser</span></li>
+                    <li class="startMenuCalculatorIcon lastli"><span class="calcIcon"></span><span class="startMenuTxt">
+                        Calculator</span></li>
+                </ul>
+            </div>
+            <div class="rightSpace">
+                <ul class="thumbUlIcons">
+                    <li><span class="myWorksFolderIcon"></span></li>
+                    <li><span class="myDesignFolderIcon"></span></li>
+                    <li><span class="aboutIcon"></span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- allProgramesArea div end here -->
+        <div class="startingSpace">
+            <a class="startMenu" href="#"></a>
+            <div class="shortcutSpace">
+                <p href="#" class="dateTime">
+                    <span class="timeShow">12:00 AM</span> <span class="dateShow">11/16/2012</span>
+                </p>
+                <span class="shorticon startMenuFolderIcon"></span><span class="shorticon startMenuMediaIcon">
+                </span><span class="shorticon startMenuWorksIcon"></span><span class="shorticon startMenuVolumeIcon">
+                </span>
+            </div>
+            <!-- shortcutSpace div end here -->
+        </div>
+        <!-- starting Space div end here -->
+        <div class='overlaybg'>
+        </div>
+        
+        <div class="lightImg">
+             <div class="widgetContent"><img src="" alt="Alt for Thumbnail">
+                 <div class="row"><span class="Lnext">Next</span><span class="Lprev">Prev</span>
+                     <br class="clear"/>
+                </div>
+            
+            </div>
+       </div>
+    </div>
+    <!-- Mcontainer div end here -->
+</body>
+</html>

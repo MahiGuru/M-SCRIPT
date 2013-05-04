@@ -1,0 +1,1093 @@
+#Mcontainer {
+	width: 100%;
+	height: 100%;
+	background: url(../images/wallpaper.jpg) left bottom no-repeat #000;
+}
+.pullLeft {
+	float: left;
+}
+.pullRight {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.startingSpace {
+	float: left;
+	width: 100%;
+	height: 40px;
+	background: url(../images/bottom_bg.png) left top repeat-x;
+	position: absolute;
+	bottom: 0;
+	z-index: 555;
+}
+.startMenu {
+	width: 60px;
+	height: 60px;
+	float: left;
+	background: url(../images/icons.png) -138px -230px no-repeat;
+	position: relative;
+	margin-top: -20px;
+	left: 5px;
+	cursor: pointer;
+	z-index: 999;
+}
+.startMenu:hover {
+	background-position: -207px -227px;
+	position: relative;
+	margin-top: -25px;
+}
+.shortcutSpace {
+	width: 350px;
+	float: right;
+	padding: 0px;
+}
+.dateTime {
+	width: 70px;
+	float: right;
+	border: #FFF solid 1px;
+	margin-top: 2px;
+	cursor: default;
+}
+.dateTime span {
+	display: block;
+	text-align: center;
+	padding-top: 2px;
+}
+.shorticon {
+	width: 32px;
+	height: 30px;
+	background: url(../images/icons.png);
+	float: right;
+	margin: 5px 0px;
+	cursor: pointer;
+	border-left: #FFF solid 1px;
+	border-right: #FFF solid 1px;
+}
+.shorticon:hover, .dateTime:hover {
+	border-left: #ccc solid 1px;
+	border-right: #ccc solid 1px;
+}
+.startMenuFolderIcon {
+	background-position: -187px -7px;
+}
+.startMenuMediaIcon {
+	background-position: -147px -7px;
+}
+.startMenuWorksIcon {
+	background-position: -105px -7px;
+}
+.startMenuVolumeIcon {
+	background-position: -72px -7px;
+}
+.thumbnailUL {
+	width: 10%;
+	float: left;
+	margin: 5px;
+}
+.thumbnail_Li {
+	width: 80px;
+	text-align: center;
+	color: #FFF;
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 10px;
+	padding: 10px;
+	cursor: default;
+}
+.thumbnail_Li:hover, .thumbnail_LiActive {
+	background: url(../images/transperent_HoverBg.png) left bottom repeat;
+	border-radius: 10px;
+}
+.myWorksFolderIcon {
+	width: 42px;
+	height: 40px;
+	background: url(../images/icons.png) -76px -41px no-repeat;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.myDesignFolderIcon {
+	width: 50px;
+	height: 40px;
+	background: url(../images/icons.png) -125px -164px no-repeat;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.myEditorIcon {
+	width: 42px;
+	height: 50px;
+	background: url(../images/icons.png) -220px -102px no-repeat;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.aboutIcon {
+	width: 42px;
+	height: 40px;
+	background: url(../images/icons.png) -245px -330px no-repeat;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.thumbTitle {
+	display: block;
+}
+.rightDiv {
+	float: right;
+	width: 15%;
+	margin: 15px;
+}
+.visitsDiv {
+	float: right;
+	margin: 5px;
+	width: 197px;
+	height: 145px;
+	background: url(../images/visits_page.png) center top no-repeat;
+	position: relative;
+}
+.visitsCount {
+	position: absolute;
+	top: 70px;
+	left: 35px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.visitsDayCount {
+	position: absolute;
+	top: 70px;
+	left: 130px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.clockSpace {
+	width: 196px;
+	margin: 5px;
+	height: 188px;
+	background: url(../images/clock.png) center top no-repeat;
+	float: right;
+	position: relative;
+}
+.minutesStick {
+	width: 10px;
+	height: 98px;
+	background: url(../images/MinuteStick_Clock.png) left top no-repeat;
+	float: left;
+	position: absolute;
+	left: 95px;
+	top: 45px;
+}
+.hoursStick {
+	width: 10px;
+	height: 80px;
+	background: url(../images/HoursStick_Clock.png) left top no-repeat;
+	float: left;
+	position: absolute;
+	left: 95px;
+	top: 54px;
+}
+.centerDotClock {
+	width:20px;
+	height:20px;
+	background:url(../images/centerDot_Clock.png) left top no-repeat;
+	position:absolute;
+	top:86px;
+	float:left;
+	left:92px;
+}
+.secondsStick {
+	width: 10px;
+	height: 80px;
+	background: url(../images/secondsStick_Clock.png) left top no-repeat;
+	float: left;
+	position: absolute;
+	left: 95px;
+	top: 54px;
+}
+.boxClose {
+	float: right;
+	width: 26px;
+	height: 30px;
+	position: absolute;
+	right: 5px;
+	top: -10px;
+	background: url(../images/icons.png) -2px -309px no-repeat;
+	cursor: pointer;
+}
+.boxClose:hover {
+	background-position: -29px -309px;
+}
+/* ------------------------------------------- WidgetDiv Styles Start from here ----------------------------------**/
+.jWorksFolderDiv, .dWorksFolderDiv, .AboutmeFolderDiv, .textFileComments {
+	width: 600px;
+	height: 400px;
+	background: #FFF;
+	position: absolute;
+	left: 20%;
+	border-radius: 10px;
+	top: 30px;
+	display: inline-block;
+	min-width: 500px;
+	min-height: 500px;
+}
+.dWorksFolderDiv {
+	top: 70px;
+	left: 25%;
+}
+.tutorialFolderDiv {
+	width: 100%;
+	float: left;
+	height: 100%;
+	overflow: auto;
+}
+.folderList li {
+	float: left;
+	width: 30%;
+	margin-right: 10px;
+	margin-top: 10px;
+	overflow:hidden;
+}
+.folderList li img {
+	height: 80px;
+	margin-right: 20px;
+}
+.listView .folderList li img
+{	height:50px;
+}
+.thumbanilsView .folderList li img
+{
+	height:150px;
+}
+.widgetHeader
+{
+    width: 100%;
+    height: 60px;
+    background: url(../images/windowHeadBg.png) left top repeat-x;
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+    position: absolute;
+    cursor: default;
+}
+.mEditor .widgetHeader
+{
+	height:40px;	
+}
+.widgetContent
+{
+    margin-top: 60px;
+    float: left;
+    height: 87%;
+    width: 100%;
+}
+.widgetTreeListArea {
+	width: 190px;
+	float: left;
+	height: 90%;
+	padding-left: 10px;
+	overflow-x: hidden;
+}
+/* 
+	 .listView ------>  class for listview in widget ,
+    	.thumbanilsListView -----------> Class for Thumbnails and Tree list view in Widget ,
+	.thumbanilsView -----> Class for Thumbnail view in Widget,
+	
+	.thumbanilsList --------> Classs for UL tag ,
+    	.thumbnailFolderIcon -----------> for folder icon Resizing ,
+	.FolderShowDiv ------> for Thumbnail Details UnorderedList view in Widget,
+	.widgetTreeListArea  ----> for TreelistView in Widget
+	
+*/
+
+
+.listView .widgetTreeListArea, .thumbanilsView .widgetTreeListArea {
+	display: none;
+}
+.thumbanilsListView .widgetTreeListArea {
+	display: inline-block;
+}
+.listView .FolderShowDiv, .thumbanilsView .FolderShowDiv {
+	width: 98%;
+	margin: auto;
+	height:90%;
+	overflow:auto;
+}
+.thumbanilsListView .FolderShowDiv {
+	width: 64%;
+	float: left;
+	height: 80%;
+	border-left: #CCC solid 1px;
+	padding-left: 10px;
+	overflow: auto;
+    position: absolute;
+    left: 200px;
+}
+.thumbanilsList {
+	float: left;
+	width: 98%;
+}
+.thumbanilsListView .thumbanilsList li {
+	float: left;
+	width: 80px;
+	padding: 5px;
+	list-style: none;
+	text-align: center;
+	margin-right: 25px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	cursor: default;
+}
+.listView .thumbanilsList li, .thumbanilsView .thumbanilsList li, .thumbanilsView .folderList li {
+	float: left;
+	width: 98%;
+	padding: 5px;
+	list-style: none;
+	text-align: left;
+	margin-bottom: 10px;
+	cursor: default;
+}
+.listView .thumbanilsList li .thumbTitle, .thumbanilsView .thumbanilsList li .thumbTitle {
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	padding-left: 10px;
+}
+.thumbanilsView .thumbanilsList li .thumbTitle {
+	top: -15px;
+}
+.thumbnailFolderIcon, .thumbanilsListView .thumbnailFolderIcon {
+	width: 46px;
+	height: 38px;
+	display: inline-block;
+	background: url(../images/icons.png) -129px -100px no-repeat;
+}
+.thumbanilsView .thumbnailFolderIcon {
+	width: 46px;
+	height: 54px;
+	display: inline-block;
+	background: url(../images/icons.png) -238px -9px no-repeat;
+}
+.listView .textFileIcon {
+	width: 17px;
+	height: 38px;
+	display: inline-block;
+	background: url(../images/diconsizes.png) left bottom no-repeat;
+}
+.thumbanilsListView .textFileIcon, .textFileIcon {
+	width: 34px;
+	height: 42px;
+	display: inline-block;
+	background: url(../images/diconsizes.png) -17px bottom no-repeat;
+}
+.thumbanilsView .textFileIcon {
+	width: 48px;
+	height: 60px;
+	display: inline-block;
+	background: url(../images/diconsizes.png) -50px bottom no-repeat;
+}
+.thumbanilsList li:hover, .thumbanilsListActive {
+	background: #EAEAEA;
+	border-radius: 5px;
+}
+.listView .thumbnailFolderIcon, .smallFolderIcon {
+	width: 14px;
+	height: 18px;
+	float: left;
+	background: url(../images/icons.png) -195px -100px no-repeat;
+	margin-right:10px;
+	position:relative;
+	top:-2px;
+}
+.listView .thumbnailFolderIcon, .imgThumbcon {
+	width: 18px;
+	height: 18px;
+	float: left;
+	background: url(../images/img_icon.png) left top no-repeat;
+	margin-right:10px;
+	position:relative;
+	top:-2px;
+}
+
+
+.smallFolderOpenIcon {
+	width: 14px;
+	height: 18px;
+	float: left;
+	background: url(../images/icons.png) -177px -100px no-repeat;
+}
+.treeListArea {
+	padding: 5px;
+	float: left;
+	width: 96%;
+	padding-left: 15px;
+}
+.treeSubListArea {
+	width: 80%;
+	margin-left: 25px;
+	display:none;
+}
+.treeListArea li {
+	width: 100%;
+	display: block;
+	float: left;
+	margin: 5px;
+	position: relative;
+	cursor: default;
+}
+.treeTitle {
+	float: left;
+	padding: 2px 10px;
+	width: 60%;
+}
+.showPlus {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background: url(../images/icons.png) -221px -62px no-repeat;
+	position: absolute;
+	left: -15px;
+	cursor: pointer;
+}
+.showMinus {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background: url(../images/icons.png) -221px -48px no-repeat;
+	position: absolute;
+	left: -15px;
+	cursor: pointer;
+}
+.buttonsPanel {
+	width: 70px;
+	padding: 5px;
+	float: left;
+	margin-top: 8px;
+}
+.minimizeBtn, .maximizeBtn, .closeBtn {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../images/icons.png) left -5px no-repeat;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.resize {
+	width: 20px;
+	height: 20px;
+	float: right;
+	background: url(../images/icons.png) left -288px no-repeat;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	cursor: nw-resize;
+}
+.minimizeBtn:hover {
+	background-position: -21px -21px;
+}
+.maximizeBtn:hover {
+	background-position: -42px -21px;
+}
+.closeBtn:hover {
+	background-position: 0px -21px;
+}
+.widgetHeader h1 {
+	width: 50%;
+	float: left;
+	padding: 12px 5px;
+	font-size: 12px;
+	color: #036;
+	font-weight: bold;
+	position: absolute;
+	left: 70px;
+}
+.categoryPanel {
+	width: 100px;
+	float: right;
+	margin: 10px;
+}
+.listCategoryIcon {
+	float: right;
+	width: 29px;
+	height: 23px;
+	background: url(../images/icons.png) left -123px no-repeat;
+	position: relative;
+	z-index: 222;
+}
+.treeCategoryIcon {
+	float: right;
+	width: 27px;
+	height: 23px;
+	background: url(../images/icons.png) -31px -99px no-repeat;
+	position: relative;
+	z-index: 222;
+}
+.thumbnailCategoryIcon {
+	float: right;
+	width: 28px;
+	height: 23px;
+	background: url(../images/icons.png) -58px -99px no-repeat;
+	position: relative;
+	z-index: 222;
+}
+.categoryPanel .listCategoryIconActive {
+	background-position: left -99px;
+}
+.categoryPanel .treeCategoryIconActive {
+	background-position: -30px -123px;
+}
+.categoryPanel .thumbnailCategoryIconActive {
+	background-position: -60px -148px;
+}
+.templatesFolder {
+	width: 100%;
+	float: left;
+}
+.list {
+	width: 100%;
+}
+.list li {
+	float: left;
+	width: 150px;
+	list-style: none;
+	padding: 5px;
+}
+.templatesFolder .list li img {
+	height: 100px;
+}
+.historyBackArea {
+	width: 60px;
+	float: left;
+	position: absolute;
+	right: 100px;
+	height: 25px;
+	top: 10px;
+}
+.backBtn {
+	width: 28px;
+	height: 23px;
+	float: left;
+	background: url(../images/icons.png) left -44px no-repeat;
+}
+.backBtn:hover {
+	background-position: left -69px;
+}
+.forwordBtn {
+	width: 28px;
+	height: 23px;
+	float: left;
+	background: url(../images/icons.png) -28px -44px no-repeat;
+}
+.forwordBtn:hover {
+	background-position: -28px -69px;
+}
+.forwordBtnDisabled {
+	width: 28px;
+	height: 23px;
+	float: left;
+	background: url(../images/icons.png) -96px -94px no-repeat;
+}
+.backBtnDisabled {
+	width: 28px;
+	height: 23px;
+	float: left;
+	background: url(../images/icons.png) -92px -118px no-repeat;
+}
+/*************************************  Editor Styles here ***********************/
+.mEditor {
+	width: 80%;
+	height: 80%;
+	position: relative;
+	top:5%;
+	left:10%;
+}
+.mEditor .widgetHeader, .mEditor .resize {
+	z-index: 999;
+}
+.editingArea {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #FFF;
+	min-width: 800px;
+	top: 40px;
+	z-index: 111;
+}
+.mEditor .buttonsPanel {
+	width: auto;
+}
+.leftContainer, .rightContainer, .topContainer, .bottomContainer, .contentArea {
+	height: 100%;
+	position: absolute;
+	z-index: 555;
+}
+.leftContainer {
+	background: #DFFBFF;
+}
+.rightContainer {
+	background: #FFE3C6;
+}
+.contentArea {
+	background-color: #FFF;
+}
+.tbcurve, .rbcurve, .lbcurve, .bbcurve {
+	height: 20px;
+}
+.noFoldersContent {
+	color: #CCCCCC;
+	font-size: 14px;
+}
+.outputButtons {
+	width:150px;
+	float:right;
+	position:relative;
+	z-index:999;
+	top:10px;
+}
+.allProgramesArea {
+	background:#FFF url(../images/allProgramesBg.png) left top repeat;
+	border-radius:10px 10px 0 0;
+	height:300px;
+	width:300px;
+	position:absolute;
+	bottom:40px;
+	left:10px;
+	display:none;
+	padding-top:20px;
+	z-index:555;
+}
+.allProgramesArea .ulist li {
+	padding:3px 10px;
+	border-bottom:#EBEBEB solid 1px;
+	height:50px;
+	position:relative;
+}
+.allProgramesArea .ulist li.lastli {
+	border-bottom:none;
+}
+.allProgramesArea .ulist li .startMenuTxt {
+	position:absolute;
+	top:20px;
+	left:70px;
+	font-weight:bold;
+	cursor:default;
+}
+.allProgramesArea .ulist li:hover, .allProgramesArea .rightSpace li:hover {
+	background:#FFF url(../images/allProgramesBg.png) left bottom repeat;
+}
+.allProgramesArea .rightSpace li:hover {
+	border-bottom:1px solid #CCC;
+	margin-bottom:-1px;
+}
+.allProgramesArea .ulist li:hover .startMenuTxt {
+	color:#FF0000;
+}
+.browserIcon, .calcIcon, .visitorIcon, .clockIcon {
+	width: 40px;
+	height: 40px;
+	float: left;
+	background: url(../images/icons.png) left top no-repeat;
+	position:relative;
+	top:5px;
+}
+.browserIcon {
+	background-position:-288px -239px;
+}
+.calcIcon {
+	background-position:-288px -288px;
+}
+.visitorIcon {
+	background-position:6px -343px;
+}
+.clockIcon {
+	background-position:-30px -343px;
+}
+.leftSpace {
+	width:70%;
+	float:left;
+}
+.rightSpace {
+	width:25%;
+	float:right;
+}
+.thumbUlIcons li {
+	padding:0 20px;
+	background:#EBEBEB;
+	margin:5px;
+}
+#outputFrame {
+	position:absolute;
+	height:100%;
+	background:#FFF;
+	white-space:nowrap;
+}
+.HTMLarea, .cssArea, .javascriptArea {
+	position:absolute;
+	width:100%;
+	height:50%;
+	background:none;
+	border:none;
+	resize: none;
+}
+.HTMLarea {
+	border-bottom:#999999 solid 1px;
+	background:#FFFADD
+}
+.cssArea {
+	top:50%;
+	padding-top:10px;
+}
+.javascriptArea {
+	position:absolute;
+	height:98%;
+}
+.htmlSpan, .cssSpan, .javascriptSpan, .outputSpan {
+	position:absolute;
+	top:0;
+	background:#F3F3F3;
+	padding:5px;
+	right:0;
+	z-index:888;
+}
+.cssSpan {
+	top:50%;
+}
+.pluginsFolderDiv span.smallFolderIcon .pluginsFolderDiv span.smallFolderIcon {
+	margin-right:10px;
+}
+/******************************************** Calender styles here **********************************/
+
+#calender {
+	width:350px;
+	height:300px;
+}
+.myCalendar {
+	position:absolute;
+	bottom:25px;
+	right:0;
+}
+.myContainer {
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.hasMCalender {
+	width:350px;
+	height:250px;
+	float:left;
+	position:relative;
+}
+.monthRow {
+	background:#363636;
+	width:100%;
+	height:100%;
+	position:absolute;
+	color:#333333;
+	background:url(../images/calendar/calendarBG.png) left top no-repeat;
+}
+.dateNum, .weekName {
+	width:30px;
+	height:25px;
+	float:left;
+	text-align:center;
+	cursor:default;
+}
+.weekName {
+	color:#0066CC;
+	font-weight:bold;
+}
+.prevMonth {
+	background:#FFF;
+	padding:5px;
+	float:left;
+	color:#003399;
+	background:url(../images/calendar/Arrows.png) -8px -27px no-repeat;
+	width:8px;
+	height:8px;
+	margin-left:15px;
+}
+.monthArea {
+	float:left;
+	width:100%;
+	height:40px;
+	margin-top:15px;
+}
+.monthName {
+	width:77%;
+	float:left;
+	text-align:center;
+	margin-top:-5px;
+	cursor:default;
+}
+.nextMonth {
+	float:right;
+	background:#FFF;
+	padding:5px;
+	color:#003399;
+	background:url(../images/calendar/Arrows.png) -32px -27px no-repeat;
+	width:8px;
+	height:8px;
+	margin-right:20px;
+}
+.prevMonth:hover {
+	background-position:-8px -77px
+}
+.nextMonth:hover {
+	background-position:-32px -77px
+}
+.changeCalenderArea {
+	background:#333333;
+	color:#CCFF00;
+	background:url(../images/calendar/changeYearBG.png) left top repeat;
+	border-radius:10px 10px 0 0;
+	width:88%;
+	padding:10px;
+	margin:auto;
+}
+.nextYearPlace {
+	background:url(../images/calendar/Arrows.png) -32px -2px no-repeat;
+	float:right;
+	width:25px;
+	height:20px;
+}
+.prevYearPlace {
+	background:url(../images/calendar/Arrows.png) 0px -2px no-repeat;
+	float:left;
+	width:25px;
+	height:20px;
+}
+.prevYearPlace:hover {
+	background-position:0px -52px
+}
+.nextYearPlace:hover {
+	background-position:-32px -52px
+}
+.changeSelectOption {
+	position:relative;
+	left:100px;
+	display:inline;
+}
+.hasCalendar {
+	margin:100px;
+	margin-bottom:0;
+}
+.overlaybg {
+	position:absolute;
+	z-index:999;
+	background:#333;
+	opacity:0.8;
+	width:100%;
+	height:100%;
+	display:none;
+}
+.lightImg {
+	margin:auto;
+	position:absolute;
+	z-index:9999;
+	display:none;
+	bqckground:#FFF;
+	padding:5px;
+	left: 22%;
+	width:600px;
+}
+.lightImg .widgetContent {
+	position:relative;
+	top:-10px;
+	background:#FFF;
+	padding:5px;
+}
+.lightImg img {
+	margin:auto;
+	display:block;
+	height:600px;
+	left: auto;
+}
+.lightImg .categoryPanel, .lightImg .resize {
+	display:none !important;
+}
+.row {
+	width: 585px;
+	padding: 10px;
+	background: url(../images/bottom_bg.png) left top repeat-x;
+	position: absolute;
+	bottom: 0px;
+	left: auto;
+	margin: auto;
+}
+.Lnext, .Lprev {
+	position:absolute;
+	bottom:0px;
+	z-index:9999;
+	width:50px;
+	height:20px;
+	background:#FFF;
+	padding:5px;
+}
+.Lnext {
+	right:15%;
+}
+.Lprev {
+	left:10%;
+}
+.loginArea {
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:#000;
+	z-index:999;
+	display:block;
+}
+.loginBox, .changeUser {
+	margin:auto;
+	width:250px;
+	position:relative;
+	top:35%;
+	background:#FFF;
+	padding:10px;
+}
+.changeUserBox
+{ display:none; }
+.changeUserBox img, .userBox img
+{ margin:auto;
+display:block; }
+.changeUser
+{ background:none;}
+.userTxt
+{
+	color:#09F;
+	font-weight:bold;
+	text-decoration:underline	
+}
+.loginBox input.epassword, .eusername {
+	width:200px;
+	padding:5px;
+	border:1px solid #09C
+}
+.loginBtn {
+	width:36px;
+	height:36px;
+	border:none;
+	background:url(../images/loginBtn.png) left top no-repeat;
+	position:relative;
+	left:5px;
+	cursor:pointer;
+}
+.newFolderIcon {
+    width: 85px;
+    height: 20px;
+    background: url(../images/newFolderImg.png) left top no-repeat;
+    display: block;
+    position: absolute;
+    top: 30px;
+}
+
+.newFolderIcon:hover {
+    background-position: left bottom;
+    
+}
+#contextmenu, #desktopContextMenu
+{
+	width:150px;
+	background-color:#FFF;
+	float:left;	
+	position:absolute;
+	z-index:555;
+	border:1px solid #CCC;
+}
+#contextmenu ul li, #desktopContextMenu ul li
+{
+	padding:8px;
+	border-bottom:1px solid #CCC;
+	cursor:pointer;
+	position:relative;
+}
+#contextmenu ul li:hover, #desktopContextMenu ul li:hover
+{
+	background:#DFF8FF;
+}
+#contextmenu ul li a, #desktopContextMenu ul li a
+{
+	color:#666;
+	text-decoration:none;
+	
+}
+#contextmenu ul li ul, #desktopContextMenu ul li ul
+{ position:absolute;
+left:150px;
+width:150px;
+background:#FFF;
+border:#CCC solid 1px;
+top:0px; }
+.loader
+{
+	width:72px;
+	height:72px;
+	display:inline-block;
+	margin:auto;
+	background:url(../images/loader.gif) left top no-repeat;
+	position:absolute;
+	left:55%;
+	top:40%;	
+}
+.runCode
+{	padding:5px 15px;
+	background:#FFF;
+	float:right;
+	margin-right:10px;
+	color:#000; 
+	text-decoration:none;
+	border:1px solid #FFF;
+}
+.runCode:hover
+{
+	color:#FF0000;
+	border:1px solid #999;
+}
+.textFileComments .widgetContent
+{ padding: 5px; }
+.textFileComments textarea {
+    width: 98%;
+    float: left;
+    height: 95%;
+    border: none;
+    font-size: 12px;
+}
+.comments_save_btn
+{   padding: 8px;
+    background: #FFF; 
+ }
+ .clockSpace .widgetHeader {
+     background: none;
+ }
+ .startMenuMediaIcon, .startMenuFolderIcon
+ { display: none }
+ .shutdown_txt {
+     float: left;
+     padding: 5px;
+     background: #FFF;
+     position: absolute;
+     bottom: 0;
+     right: 10px;
+    background:#FFF url(../images/allProgramesBg.png) left top repeat;
+     cursor: pointer;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -o-border-radius: 5px;
+     border: 1px solid #CCC;   
+ }
+ .shutdown_txt:hover,  .shutdownList li:hover {
+     background-position: left bottom; 
+ } 
+ .rightArrow
+ { width: 8px;height: 10px;float: right; background:#CCC url(../images/icons.png) -79px -1px repeat;padding:1px 3px;border: 1px solid #CCC;margin-left: 2px; }
+ .shutdownList
+ { position: absolute;bottom: 0;right: -90px;width: 100px;background: #FFF;display: none;}
+ .shutdownList li 
+ {
+     padding: 5px;
+     background:#FFF url(../images/allProgramesBg.png) left top repeat;
+     margin-top: -1px;
+     border: 1px solid #CCC;
+     cursor: pointer;
+ }
